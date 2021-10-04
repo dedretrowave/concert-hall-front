@@ -38,7 +38,7 @@ async function compileJS() {
 
 async function compileTemplates() {
     console.log("temlates");
-    return gulp.src(`${paths.twig}**/*.twig`)
+    return gulp.src(`${paths.twig}*.twig`)
         .pipe(twig({
             data: twigVariables,
         }))
