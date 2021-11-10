@@ -1,2 +1,22 @@
 $c-white: #fff;
+$c-gray: #cecece;
 $c-black: #000;
+$c-blue-1: #001A6C;
+$c-brown: #723A2C;
+$c-transparent: transparent;
+
+$c-blue-brown-angular-gradient:  conic-gradient(
+                from 180deg at 50% 42.86%,
+                $c-blue-1 -44.94deg,
+                $c-brown 134.25deg,
+                $c-blue-1 312.9deg,
+                $c-blue-1 315.06deg,
+                $c-brown 494.25deg);
+
+
+$c-header-bg: $c-transparent;
+$c-header-bg-active: $c-blue-brown-angular-gradient;
+$c-header-nav-text: $c-white;
+$c-nav-dropdown-text: $c-gray;
+$c-header-burger: $c-white;
+$c-header-burger-active: $c-transparent;

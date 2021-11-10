@@ -3,6 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 const browserSync = require('browser-sync').create();
 const uglify = require('gulp-uglify');
 const twig = require('gulp-twig');
+const concat = require('gulp-concat');
 
 const twigVariables = {
     title: 'Test',
@@ -32,6 +33,7 @@ async function compileCSS() {
 async function compileJS() {
     return gulp.src(`${paths.js}**/*.js`)
         .pipe(uglify())
+        .pipe(concat('index.min.js'))
         .pipe(gulp.dest(`${paths.jsc}`))
         .pipe(browserSync.stream({reload: true}));
 }
@@ -49,7 +51,7 @@ async function compileTemplates() {
 async function compileMisc() {
     paths.misc.forEach((element) => {
         return gulp.src(element)
-            .pipe(gulp.dest(`${paths.dist}/${element.split('/')[2]}`))
+            .pipe(gulp.dest(`${paths.dist}/assets/${element.split('/')[2]}`))
     })
 }
 
