@@ -1,0 +1,14 @@
+.ad {
+  background-color: $c-ad-bg;
+
+  &__no-ad {
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-size: 46px;
+    text-align: center;
+    padding: 56px 0;
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: 96px;
+    }
+  }
+}
