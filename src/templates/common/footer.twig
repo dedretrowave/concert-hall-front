@@ -1,4 +1,34 @@
 <footer></footer>
 <script src="assets/js/index.min.js"></script>
+<script>
+    const sliderOptions = {
+        type            : 'loop',
+        autoplay        : true,
+        perPage         : 4,
+        perMove         : 1,
+        gap             : 42,
+        pagination      : false,
+        pauseOnHover    : false,
+        resetProgress   : false,
+        autoWidth       : false,
+        breakpoints     : {
+            768: {
+                perPage: 1,
+            },
+            992: {
+                perPage: 2,
+            },
+            1200: {
+                perPage: 3,
+            }
+        }
+    };
+
+    const sliders = document.querySelectorAll('.splide');
+
+    sliders.forEach(slider => {
+        new Splide('.' + slider.classList[0], sliderOptions).mount();
+    })
+</script>
 </body>
 </html>

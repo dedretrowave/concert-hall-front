@@ -1,0 +1,15 @@
+.affiche {
+  background: $c-blue-brown-angular-gradient;
+  padding: 47px 0;
+
+  &__title {
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-size: 48px;
+    color: $c-affiche-title-text;
+    margin-bottom: 47px;
+
+    &--colored {
+      color: $c-affiche-title-text-colored;
+    }
+  }
+}
