@@ -26,8 +26,11 @@
     background: none;
     height: auto;
     display: flex;
+    position: absolute;
 
     .header__nav {
+      opacity: 1;
+      transform: scaleY(1);
       margin: 0 30px;
       width: 100%;
     }
@@ -55,11 +58,14 @@
       }
 
       &__dropdown {
+        left: 28%;
+
         .nav-list {
           &__item {
             margin-left: 15px;
             margin-bottom: 15px;
             font-size: 18px;
+            width: auto;
           }
 
           &__text {
@@ -87,7 +93,6 @@
 
         &__text {
           font-size: 18px;
-          color: #000;
           text-align: center;
           width: 100%;
         }

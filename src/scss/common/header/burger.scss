@@ -59,4 +59,8 @@
       transform: rotate(-45deg);
     }
   }
+  
+  @media screen and (min-width: $screen-md) {
+    display: none;
+  }
 }
