@@ -85,32 +85,53 @@
 </footer>
 <script src="assets/js/index.min.js"></script>
 <script>
-    const sliderOptions = {
+
+
+    const sliderOptionsDefault = {
         type            : 'loop',
         autoplay        : true,
-        perPage         : 4,
-        perMove         : 1,
-        gap             : 42,
         pagination      : false,
-        pauseOnHover    : false,
+        pauseOnHover    : true,
         resetProgress   : false,
         autoWidth       : false,
-        breakpoints     : {
-            768: {
-                perPage: 1,
-            },
-            992: {
-                perPage: 2,
-            },
-            1200: {
-                perPage: 3,
-            }
-        }
     };
 
     const sliders = document.querySelectorAll('.splide');
 
     sliders.forEach(slider => {
+        let sliderOptions;
+
+        switch (slider.classList[0]) {
+            case 'affiche__slider':
+                sliderOptions = {
+                    ...sliderOptionsDefault,
+                    perPage         : 4,
+                    perMove         : 1,
+                    gap             : 42,
+                    breakpoints     : {
+                        768: {
+                            perPage: 1,
+                        },
+                        992: {
+                            perPage: 2,
+                        },
+                        1200: {
+                            perPage: 3,
+                        }
+                    }
+                }
+                break;
+            case 'banner__slider':
+                sliderOptions = {
+                    ...sliderOptionsDefault,
+                    perPage         : 1,
+                    perMove         : 1,
+                };
+                break;
+            default:
+                sliderOptions = sliderOptionsDefault;
+        }
+
         new Splide('.' + slider.classList[0], sliderOptions).mount();
     })
 </script>
