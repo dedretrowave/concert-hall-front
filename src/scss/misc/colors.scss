@@ -1,7 +1,10 @@
 $c-white: #fff;
+$c-white-84-transparent: rgba(255, 255, 255, .84);
 $c-gray: #cecece;
 $c-gray-1: #EAEAEA;
+$c-gray-2: #898989;
 $c-black: #000;
+$c-black-semi-transparent: rgba(000, 000, 000, .5);
 $c-blue-1: #001A6C;
 $c-blue-2: #2D61E5;
 $c-brown: #723A2C;
@@ -42,6 +45,14 @@ $c-contacts-border-bottom: $c-white;
 
 $c-forvisitors-bg: $c-blue-brown-angular-gradient;
 $c-forvisitors-item-title: $c-white;
+
+$c-newsletter-bg: $c-blue-2;
+$c-newsletter-title-text: $c-white;
+$c-newsletter-subtitle-text: $c-white;
+$c-newsletter-email-placeholder: $c-black-semi-transparent;
+$c-newsletter-email-bg: $c-white-84-transparent;
+$c-newsletter-email-submit-text: $c-white;
+$c-newsletter-email-submit-bg: $c-gray-2;
 
 $c-footer-border-top: $c-white;
 $c-footer-border-bottom: $c-white;

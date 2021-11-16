@@ -1,0 +1,83 @@
+.newsletter {
+  background-color: $c-newsletter-bg;
+  padding: 55px 0;
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @media screen and (min-width: $screen-lg) {
+      flex-direction: row;
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:first-child {
+      align-items: start;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      justify-content: center;
+
+      &:first-child {
+        width: 40%;
+      }
+    }
+  }
+
+  &__title {
+    color: $c-newsletter-title-text;
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    margin-bottom: 10px;
+  }
+
+  &__subtitle {
+    color: $c-newsletter-subtitle-text;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  &__email {
+    color: $c-newsletter-email-placeholder;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 14px 11px;
+    font-size: 18px;
+    background-color: $c-newsletter-email-bg;
+
+    @media screen and (min-width: $screen-lg) {
+      position: relative;
+      right: 120px;
+      font-size: 25px;
+      padding: 22px 28px;
+    }
+  }
+
+  &__email-submit {
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    padding: 18px 18px;
+    background-color: $c-newsletter-email-submit-bg;
+    color: $c-newsletter-email-submit-text;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    margin-top: 10px;
+
+    @media screen and (min-width: $screen-lg) {
+      position: absolute;
+      right: 0;
+      margin-top: 0;
+      font-size: 22px;
+      padding: 25px 28px;
+    }
+  }
+}

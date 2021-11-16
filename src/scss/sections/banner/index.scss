@@ -22,11 +22,16 @@
       display: flex;
       flex-direction: column;
       justify-content: end;
+
+      @media screen and (min-width: $screen-md) {
+        justify-content: center;
+      }
     }
 
     &-img {
       position: absolute;
       z-index: -1;
+      width: auto;
     }
 
     &-title {
@@ -36,7 +41,7 @@
 
       @media screen and (min-width: $screen-md) {
         font-size: 48px;
-        padding: 0 30px 50px 150px;
+        padding: 0 30px 0 150px;
       }
 
       @media screen and (min-width: $screen-lg) {
@@ -51,7 +56,7 @@
 
       @media screen and (min-width: $screen-md) {
         font-size: 24px;
-        padding: 50px 30px 350px 150px;
+        padding: 0 30px 0 150px;
       }
 
       @media screen and (min-width: $screen-lg) {
