@@ -15,6 +15,8 @@ $c-blue-brown-angular-gradient:  conic-gradient(
                 $c-blue-1 315.06deg,
                 $c-brown 494.25deg);
 
+$c-section-title-text: $c-white;
+$c-section-title-text-colored: $c-blue-2;
 
 $c-header-bg: $c-transparent;
 $c-header-bg-active: $c-blue-brown-angular-gradient;
@@ -28,19 +30,18 @@ $c-banner-title: $c-white;
 $c-banner-subtitle: $c-white;
 
 $c-affiche-bg: $c-blue-brown-angular-gradient;
-$c-affiche-title-text: $c-white;
-$c-affiche-title-text-colored: $c-blue-2;
 
 $c-ad-bg: $c-gray-1;
 $c-ad-none-text: $c-black;
-
-
 
 $c-footer-bg: $c-blue-brown-angular-gradient;
 $c-footer-link: $c-white;
 
 $c-contacts-text: $c-white;
 $c-contacts-border-bottom: $c-white;
+
+$c-forvisitors-bg: $c-blue-brown-angular-gradient;
+$c-forvisitors-item-title: $c-white;
 
 $c-footer-border-top: $c-white;
 $c-footer-border-bottom: $c-white;
