@@ -9,9 +9,9 @@
   &__body {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
 
     @media screen and (min-width: $screen-md) {
       flex-direction: row;
@@ -19,14 +19,20 @@
   }
 
   &__item {
-    width: 256px;
-    height: 465px;
+    width: 219px;
+    height: 395px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: end;
     margin-bottom: 20px;
-    margin-right: 34px;
+    flex-shrink: 1;
+
+    @media screen and (min-width: $screen-md) {
+      &:not(:last-child) {
+        margin-right: 34px;
+      }
+    }
   }
 
   &__image {
@@ -38,7 +44,7 @@
 
 
   &__item-title {
-    font-size: 29px;
+    font-size: 25px;
     position: relative;
     z-index: 1;
     color: $c-forvisitors-item-title;

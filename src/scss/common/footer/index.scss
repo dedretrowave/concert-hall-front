@@ -23,6 +23,15 @@
         }
       }
     }
+
+    @media screen and (min-width: $screen-lg) {
+      display: flex;
+      justify-content: space-between;
+
+      &__block {
+        width: 314px;
+      }
+    }
   }
 
   &__nav {
@@ -58,8 +67,8 @@
 
     .symbols {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       border-bottom: 2px solid $c-symbols-border-right;
 
       &__block {
@@ -83,9 +92,21 @@
       }
 
       @media screen and (min-width: $screen-md) {
+        flex-direction: row;
         justify-content: space-between;
         margin-right: 10px;
         border-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      border-right: 2px solid $c-symbols-border-right;
+      margin-bottom: 10px;
+
+      .symbols {
+        &__block {
+          width: 24%;
+        }
       }
     }
   }
@@ -106,7 +127,25 @@
 
       @media screen and (min-width: $screen-md) {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+
+        &__link {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      width: 40%;
+      max-width: 485px;
+
+      .socials {
+        height: 100%;
+        padding: 20px;
       }
     }
   }
@@ -129,45 +168,8 @@
       margin-top: 0;
     }
 
-    &__contacts {
-      .contacts {
-        display: flex;
-        justify-content: space-between;
-
-        &__block {
-          width: 314px;
-        }
-      }
-    }
-
     &__link {
       text-align: center;
-    }
-
-    &__symbols {
-      border-right: 2px solid $c-symbols-border-right;
-      margin-bottom: 10px;
-
-      .symbols {
-        &__block {
-          width: 250px;
-        }
-      }
-    }
-
-    &__socials {
-      width: 30%;
-      max-width: 485px;
-
-      .socials {
-        height: 100%;
-        padding: 20px;
-
-        &__link {
-          display: flex;
-          margin-right: 5px;
-        }
-      }
     }
   }
 }
