@@ -5,6 +5,7 @@
   &__bottom {
     border-top: 2px solid $c-footer-border-top;
     border-bottom: 2px solid $c-footer-border-bottom;
+    margin-top: 20px;
   }
 
   .contacts {
@@ -28,15 +29,28 @@
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
-  }
 
-  &__link {
-    font-family: 'Montserrat-ExtraBold', sans-serif;
-    font-size: 18px;
-    color: $c-footer-link;
-    margin-bottom: 10px;
-    margin-right: 15px;
-    width: 250px;
+    &-list {
+      width: 242px;
+
+      li > a {
+        font-family: 'Montserrat-ExtraBold', sans-serif;
+        text-wrap: normal;
+        color: $c-footer-link;
+        transition: color .3s ease-in-out;
+
+        &:hover {
+          color: $c-footer-link-hover;
+        }
+      }
+    }
+
+    &-heading a {
+      font-family: 'Montserrat-ExtraBold', sans-serif;
+      font-size: 18px;
+      color: $c-footer-heading-text !important;
+      margin-bottom: 10px;
+    }
   }
 
   &__symbols {
@@ -45,7 +59,6 @@
     .symbols {
       display: flex;
       flex-wrap: wrap;
-      padding-top: 30px;
       justify-content: center;
       border-bottom: 2px solid $c-symbols-border-right;
 
@@ -71,6 +84,7 @@
 
       @media screen and (min-width: $screen-md) {
         justify-content: space-between;
+        margin-right: 10px;
         border-bottom: 0;
       }
     }
@@ -107,11 +121,12 @@
 
   @media screen and (min-width: $screen-lg) {
     &__top {
-      margin-bottom: 325px;
+      margin-bottom: 60px;
     }
 
     &__bottom {
       display: flex;
+      margin-top: 0;
     }
 
     &__contacts {
@@ -135,7 +150,7 @@
 
       .symbols {
         &__block {
-          width: 280px;
+          width: 250px;
         }
       }
     }

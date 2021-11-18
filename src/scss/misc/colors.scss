@@ -1,5 +1,6 @@
 $c-white: #fff;
 $c-white-84-transparent: rgba(255, 255, 255, .84);
+$c-white-50-transparent: rgba(255, 255, 255, .5);
 $c-gray: #cecece;
 $c-gray-1: #EAEAEA;
 $c-gray-2: #898989;
@@ -28,7 +29,7 @@ $c-nav-dropdown-text: $c-gray;
 $c-header-burger: $c-white;
 $c-header-burger-active: $c-transparent;
 
-$c-banner-bg: $c-blue-1;
+$c-banner-bg: $c-black;
 $c-banner-title: $c-white;
 $c-banner-subtitle: $c-white;
 
@@ -36,9 +37,6 @@ $c-affiche-bg: $c-blue-brown-angular-gradient;
 
 $c-ad-bg: $c-gray-1;
 $c-ad-none-text: $c-black;
-
-$c-footer-bg: $c-blue-brown-angular-gradient;
-$c-footer-link: $c-white;
 
 $c-contacts-text: $c-white;
 $c-contacts-border-bottom: $c-white;
@@ -56,6 +54,10 @@ $c-newsletter-email-submit-bg: $c-gray-2;
 
 $c-footer-border-top: $c-white;
 $c-footer-border-bottom: $c-white;
+$c-footer-bg: $c-blue-brown-angular-gradient;
+$c-footer-heading-text: $c-white;
+$c-footer-link: $c-white-50-transparent;
+$c-footer-link-hover: $c-white;
 
 $c-symbols-text: $c-white;
 $c-symbols-border-right: $c-white;
