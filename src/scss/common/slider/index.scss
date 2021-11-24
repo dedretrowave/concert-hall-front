@@ -30,6 +30,12 @@
         opacity: .9;
       }
     }
+    &--next{
+      right: 5em;
+    }
+    &--prev{
+      left: 5em;
+    }
   }
 
   &__track {
