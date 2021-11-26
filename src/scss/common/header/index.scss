@@ -20,7 +20,10 @@
   &__logo {
     width: 100px;
     height: 70px;
-    margin-left: 100px;
+
+    @media screen and (min-width: $screen-lg) {
+      margin-left: 100px;
+    }
   }
 
   @media screen and (min-width: $screen-lg) {

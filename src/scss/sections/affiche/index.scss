@@ -3,7 +3,33 @@
   padding: 47px 0;
 
   .splide {
-    height: 400px;
     position: relative;
+
+    &__track {
+      width: 80%;
+    }
+
+    &__arrow--next {
+      right: 0;
+    }
+
+    &__arrow--prev {
+      left: 0;
+    }
+
+    &__slide {
+      img {
+        transition: $t-affiche-splide-img;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        img {
+          filter: blur(2px);
+          transform: scale(1.1);
+        }
+      }
+    }
   }
 }

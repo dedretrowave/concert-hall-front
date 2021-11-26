@@ -12,6 +12,11 @@
 
     &-arrow {
       background: none;
+      display: none;
+
+      @media screen and (min-width: $screen-md) {
+        display: block;
+      }
     }
 
     &-track {
