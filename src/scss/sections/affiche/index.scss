@@ -1,6 +1,6 @@
 .affiche {
   background: $c-blue-brown-angular-gradient;
-  padding: 47px 0;
+  padding: 47px 0 0 0;
 
   .splide {
     position: relative;
@@ -10,16 +10,19 @@
     }
 
     &__arrow--next {
-      right: 0;
+      right: 5em;
+      top: 35%;
     }
 
     &__arrow--prev {
-      left: 0;
+      left: 5em;
+      top: 35%
     }
 
     &__slide {
       img {
         transition: $t-affiche-splide-img;
+        height: 75%;
       }
 
       &:hover {
