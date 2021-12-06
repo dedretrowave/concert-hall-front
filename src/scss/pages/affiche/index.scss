@@ -1,0 +1,9 @@
+.affiche-page{
+	.banner{
+		&__slider {
+    		margin: auto;
+   			max-width: 1920px;
+    		height: 540px;
+		}
+	}
+}
