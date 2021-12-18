@@ -9,6 +9,8 @@ $c-black-semi-transparent: rgba(000, 000, 000, .5);
 $c-blue-1: #001A6C;
 $c-blue-2: #2D61E5;
 $c-brown: #723A2C;
+$c-red: rgb(219, 78, 84);
+
 $c-transparent: transparent;
 
 $c-blue-brown-angular-gradient:  conic-gradient(
@@ -65,3 +67,12 @@ $c-symbols-border-right: $c-white;
 $c-copyright-text: $c-white;
 
 $c-splide-arrow-after: $c-gray;
+
+$c-affiche-page-bg: $c-blue-brown-angular-gradient;
+$c-affiche-page-title: $c-white;
+
+$c-affiche-event-bottom-bd: $c-gray;
+$c-affiche-event-right-bd: $c-red;
+$c-affiche-event-title: $c-red;
+$c-affiche-event-date: $c-white;
+$c-affiche-event-description: $c-white-84-transparent;

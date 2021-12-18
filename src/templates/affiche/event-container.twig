@@ -1,0 +1,22 @@
+<section class="events">
+    <div class="container">
+        <div class="events__title">Афиша</div>
+        <div class="events-body">
+            <div class="events-switch">
+                <div class="events-list events--current">
+                    {% include 'event.twig' %}
+                    {% include 'event.twig' %}
+                    {% include 'event.twig' %}
+                </div>
+                <div class="events-list events--passed">
+                    Passed
+                    {% include 'event.twig' %}
+                    {% include 'event.twig' %}
+                    {% include 'event.twig' %}
+                </div>
+            </div>
+            <div class="events__calendar" id="color-calendar">
+            </div>
+        </div>
+    </div>
+</section>

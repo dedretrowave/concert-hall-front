@@ -1,0 +1,36 @@
+.event {
+  padding: 30px 20px;
+  border-bottom: 1px solid $c-affiche-event-bottom-bd;
+  border-right: 20px solid $c-affiche-event-right-bd;
+  display: flex;
+  justify-content: space-between;
+
+  &__info {
+    padding: 0 30px;
+  }
+
+
+  &__title, &__date {
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+  }
+
+  &__description {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  &__title {
+    color: $c-affiche-event-title;
+    background: 10px;
+    font-size: 27px;
+  }
+
+  &__date {
+    color: $c-affiche-event-date;
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+
+  &__description {
+    color: $c-affiche-event-description;
+  }
+}

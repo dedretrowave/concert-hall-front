@@ -1,0 +1,55 @@
+.events {
+  background: $c-affiche-page-bg;
+  padding: 50px 0;
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-switch {
+    width: 50%;
+    position: relative;
+  }
+
+  &--passed {
+    display: none;
+  }
+
+  &__title {
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-size: 40px;
+    color: $c-affiche-page-title;
+  }
+
+  &__calendar {
+    width: 60%;
+    margin-left: 20px;
+
+    .calendar {
+      &__header {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &__body {
+        width: 100%;
+        height: 100%;
+      }
+
+      &__weekdays, &__days {
+        grid-template-columns: repeat(7, minmax(20px, 115px)) !important;
+      }
+
+      &__days {
+        grid-template-rows: repeat(6, minmax(30px, 75px)) !important;
+      }
+
+      &__day {
+        width: 100px;
+        height: 85px;
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
