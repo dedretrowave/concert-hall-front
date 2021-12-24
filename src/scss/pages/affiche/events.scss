@@ -1,12 +1,16 @@
 .event {
-  padding: 30px 20px;
+  padding: 30px 20px 10px 0;
   border-bottom: 1px solid $c-affiche-event-bottom-bd;
-  border-right: 20px solid $c-affiche-event-right-bd;
+  border-right: 15px solid $c-affiche-event-right-bd;
   display: flex;
   justify-content: space-between;
 
+  &:not(:first-child) {
+    margin-top: 10px;
+  }
+
   &__info {
-    padding: 0 30px;
+    padding: 0 30px 0 0;
   }
 
 
@@ -21,16 +25,37 @@
   &__title {
     color: $c-affiche-event-title;
     background: 10px;
-    font-size: 27px;
+    font-size: 22px;
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: 27px;
+    }
   }
 
   &__date {
     color: $c-affiche-event-date;
     margin-bottom: 25px;
-    font-size: 25px;
+    font-size: 20px;
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: 22px;
+    }
   }
 
   &__description {
     color: $c-affiche-event-description;
+    font-size: 14px;
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: 18px;
+    }
+  }
+
+  &__img {
+    max-width: 150px;
+
+    @media screen and (min-width: $screen-lg) {
+      max-width: 250px;
+    }
   }
 }
