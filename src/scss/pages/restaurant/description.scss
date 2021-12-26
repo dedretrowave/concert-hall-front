@@ -1,0 +1,27 @@
+.description {
+  background: $c-restaurant-page-description-bg;
+  font-family: 'Montserrat', sans-serif;
+  color: $c-restaurant-page-description-text;
+  padding: 20px 0;
+
+  &__authorities {
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    max-width: 320px;
+    margin: 15px 0;
+    
+    @media screen and (min-width: $screen-md) {
+      max-width: unset;
+    }
+  }
+
+  &__contacts {
+    margin-top: 20px;
+  }
+
+  &__link {
+    color: $c-restaurant-page-description-link;
+  }
+}

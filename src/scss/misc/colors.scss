@@ -7,6 +7,7 @@ $c-gray-2: #898989;
 $c-black: #000;
 $c-black-semi-transparent: rgba(000, 000, 000, .5);
 $c-blue-1: #001A6C;
+$c-blue-1-50-transparent: rgba(0, 26, 108, .5);
 $c-blue-2: #2D61E5;
 $c-brown: #723A2C;
 $c-red: rgb(219, 78, 84);
@@ -80,3 +81,11 @@ $c-affiche-event-description: $c-white-84-transparent;
 $c-contacts-page-bg: $c-blue-brown-angular-gradient;
 $c-contacts-page-text: $c-white;
 $c-contacts-page-link: $c-blue-2;
+
+$c-restaurant-page-menu-bg: $c-blue-brown-angular-gradient;
+$c-restaurant-page-title: $c-white;
+$c-restaurant-page-category-item-text: $c-black;
+$c-restaurant-page-category-item-bg: $c-white-50-transparent;
+$c-restaurant-page-description-bg: $c-blue-1;
+$c-restaurant-page-description-text: $c-white;
+$c-restaurant-page-description-link: $c-blue-2
