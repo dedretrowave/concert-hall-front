@@ -1,0 +1,56 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  background: $c-contacts-page-bg;
+  color: $c-contacts-page-text;
+  padding: 20px 20px;
+  font-family: 'Montserrat', sans-serif;
+  $contacts: &;
+
+  @media screen and (min-width: $screen-lg) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__column:first-child {
+      margin-right: 30px;
+    }
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    margin-top: 55px;
+    
+    @media screen and (min-width: $screen-lg) {
+      flex-direction: row;
+
+      #{$contacts}__column {
+        width: 45%;
+      }
+    }
+  }
+
+  &__link {
+    color: $c-contacts-page-link;
+    display: inline-block;
+    margin: 10px 0;
+  }
+
+  &__subtitle {
+    margin-bottom: 15px;
+  }
+
+  &__map {
+    margin: 20px 0;
+
+    ymaps {
+      max-width: 80vw !important;
+    }
+
+    @media screen and (min-width: $screen-lg) {
+      ymaps {
+        max-width: unset !important;
+      }
+    }
+  }
+}
