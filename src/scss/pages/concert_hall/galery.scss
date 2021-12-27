@@ -1,0 +1,28 @@
+.gallery {
+  padding: 30px 10px;
+  border-bottom: 0;
+  border-right: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__info {
+        margin-top: 30px;
+        margin-bottom: 5px;
+    padding: 0 60px;
+  }
+  &__photo{
+    margin-right: 60px;
+
+  }
+
+  &__title, &__date {
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+  }
+
+  &__title {
+    color: #db4e54;
+    background: 10px;
+    font-size: 17px;
+
+  }
+}

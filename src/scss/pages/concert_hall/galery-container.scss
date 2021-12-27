@@ -1,0 +1,28 @@
+.gallery-container {
+  background: $c-affiche-page-bg;
+  padding: 150px 0;
+
+  &-body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-switch {
+    width: 100%; 
+    position: relative;
+  }
+  &-list{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &--passed {
+    display: none;
+  }
+
+  &__title {
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-size: 40px;
+    color: $c-affiche-page-title;
+  }
+}
