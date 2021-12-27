@@ -31,7 +31,7 @@ async function compileCSS() {
 }
 
 async function compileJS() {
-    return gulp.src(`${paths.js}**/*.js`)
+    return gulp.src([`${paths.js}vendor/jquery-3.6.0.slim.min.js` ,`${paths.js}**/*.js`])
         .pipe(uglify())
         .pipe(concat('index.min.js'))
         .pipe(gulp.dest(`${paths.jsc}`))

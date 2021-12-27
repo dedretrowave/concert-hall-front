@@ -1,0 +1,100 @@
+.info {
+  background-color: $c-arenda-page-bg;
+  padding: 20px 0;
+
+  @media screen and (min-width: $screen-md) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-info {
+    color: $c-arenda-page-info-text;
+    font-family: 'Montserrat', sans-serif;
+    flex-shrink: 3;
+
+    &__heading {
+      font-size: 42px;
+    }
+
+    &__text {
+      margin: 15px 0;
+    }
+
+    &__link {
+      color: $c-arenda-page-info-link;
+      font-weight: 900;
+    }
+  }
+
+  &-contacts {
+    color: $c-arenda-page-contacts-text;
+    font-size: 22px;
+    margin-bottom: 15px;
+
+    @media screen and (min-width: $screen-md) {
+      width: 45%;
+    }
+
+    &__text {
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 80px;
+      font-size: 18px;
+    }
+
+    &__link {
+      margin: 5px 0;
+      width: auto;
+      color: $c-arenda-page-contacts-link;
+      font-weight: 900;
+      font-size: 18px;
+    }
+  }
+
+  &-form {
+    color: $c-arenda-page-form-text;
+
+    @media screen and (min-width: $screen-md) {
+      width: 45%;
+    }
+
+    &__heading {
+      margin: 30px 0;
+    }
+
+    &__group {
+      display: flex;
+      flex-direction: column;
+
+      &:last-child {
+        justify-content: center;
+        flex-direction: row;
+      }
+    }
+
+    &__label {
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 10px;
+    }
+
+    &__input {
+      font-family: 'Montserrat', sans-serif;
+      margin: 10px 0 20px;
+      border: 0;
+      background: none;
+      border-bottom: 3px solid $c-arenda-page-form-input-border;
+      color: $c-arenda-page-form-input-text;
+      height: 50px;
+    }
+
+    &__submit {
+      background: $c-arenda-page-form-submit-bg;
+      border: 0;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      width: 250px;
+    }
+  }
+}
