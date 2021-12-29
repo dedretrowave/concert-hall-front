@@ -1,0 +1,14 @@
+.title {
+  background-color: black;
+
+  &__text {
+    font-family: 'Montserrat-ExtraBold', sans-serif;
+    font-size: 36px;
+    text-align: left;
+    padding: 30px 50px;
+
+    @media screen and (min-width: $screen-lg) {
+      font-size: 46px;
+    }
+  }
+}
