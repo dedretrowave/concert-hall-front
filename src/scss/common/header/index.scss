@@ -48,31 +48,32 @@
     .nav-list {
       margin-top: 20px;
 
-      &__item {
+      li {
         margin-bottom: 30px;
         cursor: pointer;
         position: relative;
       }
 
-      &__text {
+      a {
         margin-top: 10px;
         font-family: 'Montserrat', sans-serif;
         color: $c-header-nav-text;
         font-size: 18px;
+        text-align: center;
       }
 
       &__dropdown {
         left: 28%;
 
         .nav-list {
-          &__item {
+          li {
             margin-left: 15px;
             margin-bottom: 15px;
             font-size: 18px;
             width: auto;
           }
 
-          &__text {
+          a {
             color: $c-nav-dropdown-text;
 
             &::after {
@@ -88,14 +89,14 @@
         display: flex;
         align-items: center;
 
-        &__item {
+        li {
           display: flex;
           align-items: center;
           height: 100%;
           width: 20%;
         }
 
-        &__text {
+        a {
           font-size: 18px;
           text-align: center;
           width: 100%;
