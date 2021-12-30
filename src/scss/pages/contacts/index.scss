@@ -1,7 +1,7 @@
 .contacts {
   display: flex;
   flex-direction: column;
-  background: $c-contacts-page-bg;
+  background-image: radial-gradient(circle at 50% 50%, #393775 0, #2c2e6e 50%, #1d2667 100%);
   color: $c-contacts-page-text;
   padding: 20px 20px;
   font-family: 'Montserrat', sans-serif;
